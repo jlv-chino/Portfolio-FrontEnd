@@ -1,5 +1,14 @@
-.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
+.intro {
+	width:100%;
+	position:relative;	
+	background: url(../img/imgprincipal.jpg) no-repeat top center;
+	background-size: cover;
+}
+
+#quiensoyimg {
+	padding: 20% 5% 20% 5%;
+}
+
+#quiensoytxt {
+	padding: 10%;
 }

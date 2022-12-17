@@ -15,30 +15,62 @@
 </head>
 
 <body>
-<header>
+    <header>
 
-    <nav class="navbar navbar-expand-lg bg-white navbar-center sticky-top">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Quién soy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Galería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contáctame</a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">Menú --></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Quién soy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contáctame</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <img src="img/imgprincipal.jpg" class="img-fluid intro" alt="Imagen principal">
+
+    <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/imgprincipal.jpg" class="img-fluid rounded-circle" id="quiensoyimg" alt="Imagen">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" id="quiensoytxt">
+              <h4 class="card-title display-4">Bienvenido a mi sitio Web. Gracias por su visita.</h4>
+              <h6 class="card-text display-6">Mi nombre es José Luis Vilches vivo en la ciudad de Concordia, Entre Ríos, Argentina. Soy Técnico en programación (UTN-FRCON). Me dedico al diseño y desarrollo web de forma freelance.
+                Soy un aficionado a la tecnología y a la astronomía.</h6>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
 
-</header>
 </body>
 
 </html>
