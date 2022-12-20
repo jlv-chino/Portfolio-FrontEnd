@@ -37,13 +37,13 @@
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Quién soy</a>
+                                <a class="nav-link active" aria-current="page" href="#quiensoy">Quién soy</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Galería</a>
+                                <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contáctame</a>
+                                <a class="nav-link active" aria-current="page" href="#contactame">Contáctame</a>
                             </li>
                         </ul>
                     </div>
@@ -55,7 +55,7 @@
 
     <img src="img/imgprincipal.jpg" class="img-fluid intro" alt="Imagen principal">
 
-    <div class="card mb-3">
+    <div class="card mb-3" name="quiensoy" id="quiensoy">
         <div class="row g-0">
             <div class="col-md-4">
                 <img src="img/imgprincipal.jpg" class="img-fluid rounded-circle" id="quiensoyimg" alt="Imagen">
@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <div class="container text-center txtsec">
+    <div class="container text-center txtsec" name="portfolio" id="portfolio">
         <div class="row">
             <div class="col">
                 <h3 class="display-5">Técnologias utilizadas</h3>
@@ -184,7 +184,7 @@
 
     </div>
 
-    <div class="container text-center txtsec">
+    <div class="container text-center txtsec" name="contactame" id="contactame">
         <div class="row">
             <div class="col">
                 <h3 class="display-5">Contáctame</h3>
@@ -194,6 +194,8 @@
 
     <div class="container text-center paddsec">
         <div class="row">
+            <div class="col">
+            </div>
             <div class="col">
                 <form>
                     <div class="mb-3">
@@ -212,33 +214,36 @@
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">No soy robot</label>
+                        <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                 </form>
+            </div>
+            <div class="col">
             </div>
         </div>
     </div>
 
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
-          <section class="mb-4">
-            <!-- Facebook -->
-            <img src="img/iconos/facebook.svg" class="btn btn-outline-light btn-floating m-1" href="" role="button">
-            <!-- Instagram -->
-            <img src="img/iconos/instagram.svg" class="btn btn-outline-light btn-floating m-1" href="" role="button">
-            <!-- Linkedin -->
-            <img src="img/iconos/linkedin.svg" class="btn btn-outline-light btn-floating m-1" href="" role="button">
-            <!-- Github -->
-            <img src="img/iconos/github.svg" class="btn btn-outline-light btn-floating m-1" href="" role="button">
-          </section>
+            <section class="mb-4">
+                <!-- Facebook -->
+                <img src="img/iconos/facebook.svg" class="btn btn-outline-light btn-floating m-1" href="" role="button">
+                <!-- Instagram -->
+                <img src="img/iconos/instagram.svg" class="btn btn-outline-light btn-floating m-1" href=""
+                    role="button">
+                <!-- Linkedin -->
+                <img src="img/iconos/linkedin.svg" class="btn btn-outline-light btn-floating m-1" href="" role="button">
+                <!-- Github -->
+                <img src="img/iconos/github.svg" class="btn btn-outline-light btn-floating m-1" href="" role="button">
+            </section>
         </div>
-     
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright:
-          <a class="text-white" href="https://github.com/jlv-chino" target="_blank">José Luis Vilches</a>
+
+        <div class="text-center p-3 colorprincipal">
+            © 2022 Copyright:
+            <a class="text-white" href="https://github.com/jlv-chino" target="_blank">José Luis Vilches</a>
         </div>
-      </footer>
+    </footer>
 
 </body>
 
