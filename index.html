@@ -51,19 +51,66 @@
             </div>
         </nav>
 
+        <img src="img/imgprincipal.jpg" class="img-fluid intro" alt="Imagen principal">
+
     </header>
 
-    <img src="img/imgprincipal.jpg" class="img-fluid intro" alt="Imagen principal">
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4" id="perfil">
+                <img src="img/perfil.jpg" class="img-fluid rounded-circle" id="quiensoyimg" alt="Imagen">
+            </div>
+            <div class="col-md-4">
+                <img src="img/iconos/editar.svg" class="btn btn-light btn-outline-info btn-floating m-1" href=""
+                    role="button">
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8" id="informacion">
+                <div class="card-body" id="quiensoytxt">
+                    <h4 class="card-title display-5 text-center">José Luis Vilches.</h4>
+                    <h6 class="card-text display-6 text-center">Informático FREELANCE</h6>
+                    <h3 class="text-center">
+                        <small class="text-muted">Concordia, Entre Ríos (Argentina)
+                            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                data-bs-trigger="hover focus"
+                                data-bs-content="E-mail: miemail@gmail.com Cel: 345xxxxxx">
+                                <button class="btn btn-info" type="button" disabled>Información de contacto</button>
+                            </span>
+                        </small>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row g-0" id="botones">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-primary btn-lg">Tengo interés en...</button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-primary btn-lg">Añadir Sección</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-outline-primary btn-lg">Más...</button>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
 
     <div class="card mb-3" name="quiensoy" id="quiensoy">
         <div class="row g-0">
-            <div class="col-md-4">
-                <img src="img/imgprincipal.jpg" class="img-fluid rounded-circle" id="quiensoyimg" alt="Imagen">
-            </div>
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card-body" id="quiensoytxt">
-                    <h4 class="card-title display-4">Bienvenido a mi sitio Web. Gracias por su visita.</h4>
-                    <h6 class="card-text display-6">Mi nombre es José Luis Vilches vivo en la ciudad de Concordia, Entre
+                    <h4 class="card-title display-5 text-center">Bienvenido a mi sitio Web. Gracias por su visita.</h4>
+                    <h6 class="card-text display-6 text-center">Acerca de mí, vivo en la ciudad de Concordia, Entre
                         Ríos, Argentina. Soy Técnico en programación (UTN-FRCON). Me dedico al diseño y desarrollo web
                         de forma freelance.
                         Soy un aficionado a la tecnología y a la astronomía.</h6>
@@ -206,7 +253,7 @@
                     <div class="mb-3">
                         <label for="exampleFormControlInput2" class="form-label">Dirección de Email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput2"
-                            placeholder="name@example.com">
+                            placeholder="miemail@gmail.com">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
@@ -243,6 +290,13 @@
             <a class="text-white" href="https://github.com/jlv-chino" target="_blank">José Luis Vilches</a>
         </div>
     </footer>
+
+    <script>
+        var popoverTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
 
 </body>
 
