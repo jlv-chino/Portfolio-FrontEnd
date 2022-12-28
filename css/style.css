@@ -23,7 +23,11 @@
 }
 
 #quiensoytxt {
-	padding: 7%;
+	margin: 7%;
+}
+
+#quiensoyeditar {
+	margin-top: 10%;
 }
 
 .txtsec {
